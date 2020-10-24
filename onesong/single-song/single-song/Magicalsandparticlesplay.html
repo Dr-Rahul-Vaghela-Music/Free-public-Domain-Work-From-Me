@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dr Rahul Vaghela Music</title>
+
+    <!-- Include font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+
+
+    <!-- Include Amplitude JS -->
+    <script type="text/javascript" src="../../dist/amplitude.js"></script>
+
+    <!-- Include Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+
+<body>
+    <div class="navcontainer">
+        <div class="navbar">
+            <a href="https://free.drrahulvaghelamusic.com">Home</a>
+            <a href="https://www.drrahulvaghelamusic.com/music.html">Music</a>
+            <a href="https://www.drrahulvaghelamusic.com/newreleases.html">New Music</a>
+            <a href="https://www.drrahulvaghelamusic.com/contact.html">Contact</a>
+        </div>
+    </div>
+        <div id="single-song-player">
+            <img data-amplitude-song-info="cover_art_url" />
+            <div class="bottom-container">
+                <progress class="amplitude-song-played-progress" id="song-played-progress"></progress>
+
+                <div class="time-container">
+                    <span class="current-time">
+            <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+                    </span>
+                    <span class="duration">
+            <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+                    </span>
+                </div>
+
+                <div class="control-container">
+                    <div class="amplitude-play-pause" id="play-pause"></div>
+                    <div class="meta-container">
+                        <span data-amplitude-song-info="name" class="song-name"></span>
+                        <span data-amplitude-song-info="artist"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="downloadlink">
+        <p>If you want to download then click </p><a href="https://free.drrahulvaghelamusic.com/MagicalSandParticles.html">Download</a>
+    </div>
+    <!--
+			Include UX functions JS
+		-->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+
+</html>
