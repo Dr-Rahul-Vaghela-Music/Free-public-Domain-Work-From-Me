@@ -1,0 +1,76 @@
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(19, 165, 141);
+}
+
+.Headingofthepage {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.Navcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    height: 100px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    border-top: 10px solid black;
+    border-top-style: double;
+}
+
+.Navbar {
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
+    font-size: 25px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.Navbar a:hover {
+    color: rosybrown;
+}
+
+.introwords {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    top: 130px;
+    position: relative;
+}
+
+.Intro {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    animation: Slowfade 4s infinite ease;
+}
+
+@keyframes Slowfade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

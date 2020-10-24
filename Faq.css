@@ -1,0 +1,174 @@
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(104, 60, 145);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Headingofthepage {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.Navcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    height: 100px;
+}
+
+.Navbar {
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 1s;
+    font-size: 25px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.Navbar a:hover {
+    color: goldenrod;
+}
+
+.imagehere {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagehere a {
+    text-decoration: none;
+}
+
+.imagecontainer {
+    width: 100%;
+    animation: littlefade infinite 10s ease-in-out;
+}
+
+@keyframes littlefade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imagecontainer>img {
+    width: 100%;
+    box-shadow: 1px 1px 10px white;
+    animation: shadow infinite 30s;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 1px 1px 10px white;
+    }
+    50% {
+        box-shadow: 1px 1px 10px rgb(122, 122, 122);
+    }
+    100% {
+        box-shadow: 1px 1px 10px white;
+    }
+}
+
+.Authorofthepic {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    color: rgb(77, 77, 77);
+    font-size: 10px;
+    animation: fonts 10s infinite ease-out;
+}
+
+@keyframes fonts {
+    0% {
+        color: rgb(77, 77, 77);
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: rgb(77, 77, 77);
+    }
+}
+
+.Intro {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    animation: Slowfade 4s infinite ease;
+}
+
+@keyframes Slowfade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.introwords {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    top: 130px;
+    position: relative;
+}
+
+.smallwords {
+    position: relative;
+    top: 15px;
+}
+
+.DecentintroductionContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+.Decentintroduction {
+    line-height: 3;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:10px) and (max-width:450px) {
+    .Navbar a {
+        font-size: 20px;
+    }
+    .introwords {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:2000px) {
+    .Navbar a {
+        padding: 50px;
+    }
+}
